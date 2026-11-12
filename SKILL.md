@@ -1,7 +1,7 @@
 ---
 name: ai-slop-prevention
 license: MIT
-description: Use before showing any deliverable to a person, and when reviewing one: a UI screen, mockup, or prototype; a document, message, or spec; game content; a data model or code. Triggers include a card or caption that lists several fields on one line, a template or report format with no list of its fields and their types, an id shown as a label, an edit or delete rendered as text, a sentence in an interface that explains the interface, a lock or disabled control used to say "read only", prose or schemas that keep growing in parallel copies, and a stack or library chosen because the project is small or agents know it best.
+description: 'Use before showing any deliverable to a person, and when reviewing one: a UI screen, mockup, or prototype; a document, message, or spec; game content; a data model or code. Triggers include a card or caption that lists several fields on one line, a template or report format with no list of its fields and their types, an id shown as a label, an edit or delete rendered as text, a sentence in an interface that explains the interface, a lock or disabled control used to say "read only", prose or schemas that keep growing in parallel copies, and a stack or library chosen because the project is small or agents know it best.'
 ---
 
 # AI slop prevention
