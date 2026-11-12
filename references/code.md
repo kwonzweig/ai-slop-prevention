@@ -1,6 +1,6 @@
 # Data models and code
 
-The structural habit: when asked to build something, generated work multiplies parts. One concept gets a second schema, a second type, a second name, a second endpoint; nothing stays compatible, and the project drowns in its own variants. The literature calls the data form of this **schema proliferation** (InfoQ, 2026) and **near-identical object types** (Palantir Ontology guidelines). The fix in both is the same: one canonical representation per concept, with one distinguishing property for the variants.
+In code, the hard-coded snapshot multiplies parts: one concept gets a second schema, type, name, or endpoint, and the copies drift apart. The literature calls the data form **schema proliferation** (InfoQ, 2026) and **near-identical object types** (Palantir Ontology guidelines); the fix in both is one canonical representation per concept, with one distinguishing property for the variants.
 
 ## One concept, one owner
 

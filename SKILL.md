@@ -1,12 +1,12 @@
 ---
 name: ai-slop-prevention
 license: MIT
-description: 'Use before showing any deliverable to a person, and when reviewing one: a UI screen, mockup, or prototype; a document, message, or spec; game content; a data model or code. Triggers include a card or caption that lists several fields on one line, a template or report format with no list of its fields and their types, an id shown as a label, an edit or delete rendered as text, a sentence in an interface that explains the interface, a lock or disabled control used to say "read only", prose or schemas that keep growing in parallel copies, and a stack or library chosen because the project is small or agents know it best.'
+description: 'Use before showing any deliverable to a person or handing it to another agent, and when reviewing one: a UI screen, mockup, or prototype; a document, message, prompt, or spec; game content; a data model or code. Triggers include a card or caption that lists several fields on one line, a template or report format with no list of its fields and their types, an id shown as a label, an edit or delete rendered as text, a sentence in an interface that explains the interface, a lock or disabled control used to say "read only", a list, count, or detail copied from something that already has an owner, and a stack or library chosen because the project is small or agents know it best.'
 ---
 
 # AI slop prevention
 
-Generated work fails in the same few ways every time, whatever the medium. Each failure is the choice that fits the widest audience and the least context: tokens where a person needs labels, codes where they need names, explanation where they need form, and copies where they need one owner. This skill names those habits so they can be caught before a person sees them.
+Generated work fails in the same few ways every time, whatever the medium. Each failure is the choice that fits the widest audience and the least context: tokens where a person needs labels, codes where they need names, explanation where they need form, and copies where they need a pointer. This skill names those habits so they can be caught before a person sees them.
 
 Read the reference for the medium you are producing. Each one ends with a check to run before the work is shown.
 
@@ -32,8 +32,14 @@ Read the reference for the medium you are producing. Each one ends with a check 
 | Floating text | Captions, metadata, and button rows laid bare between other elements, so nobody can tell where one thing ends | Every text block and control group in its own card, panel, or boxed caption. |
 | Template chrome | Cream background with serif and terracotta, purple gradient hero, numbered 01/02/03 markers, emoji headings, cards on everything | Choose for the subject. Structure only where it carries information. |
 | Staged prose | not X but Y, one-line closers, forced triads, dashes everywhere, bold labels, "I hope this helps" | Say the thing once, plainly. See prose.md. |
-| Parallel copies | A second schema, type, document, or term for a concept that already has one | One owner per concept; a new variant is a value, not a type. See code.md. |
-| Legacy default | The option most common in training data (Express, Bootstrap) proposed as the simple choice, with "the project is small" or "agents know it best" as the reason; or the decision framed inside a layer that demand has left (which HTTP framework, when the installs sit on Supabase and Convex) | Check first whether demand has moved to a component that removes the layer, and decide there. Then rank the candidates by the standard in `find-tools`. Project size is never the reason for an older one. See code.md. |
+| Hard-coded snapshot | What an owner holds, copied as it stood at one moment: a README naming six of a catalog's seven sources, "buy meat" passed on as three cuts, a second schema or term for a concept that has one | A pointer to the owner, plus only what the reader cannot get by following it. See below; for schemas, code.md. |
+| Legacy default | The option most common in training data (Express, Bootstrap) proposed as the simple choice, with "the project is small" or "agents know it best" as the reason; or the decision framed inside a layer that demand has left | Check first whether demand has moved to a component that removes the layer, and decide there. Then rank the candidates by the standard in `find-tools`. Project size is never the reason for an older one. See code.md. |
+
+## Hard-coded snapshot
+
+When the thing already has an owner the reader can reach (a file, a catalog, a table, a type, a skill, the words of whoever asked), point to it and add only what the reader cannot get by following the pointer. "Use X" stays "use X", in an instruction, README, skill, prompt, data record, or diagram alike. A copied detail is a second source: it goes stale when the owner changes, and the next reader takes it as complete. When the reader cannot reach the owner, copy, and name the owner and the date beside the copy.
+
+First caught: a README naming six of a catalog's seven sources, 2026-11-10.
 
 ## What this skill owns, and what it points to
 
