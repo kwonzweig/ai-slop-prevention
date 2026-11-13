@@ -1,6 +1,6 @@
 # AI Slop Prevention
 
-`ai-slop-prevention` is an agent skill that names the habits generated work falls into and has the agent catch them before a person sees the result: a card that chains several fields on one line, an id shown as a label, a sentence in the interface that explains the interface, a template with no list of its fields, a second schema for a concept that already has one.
+`ai-slop-prevention` reviews the quality of deliverables people read or use: interfaces, prose, and the code and data models behind a product. It catches habits such as unlabeled fields, internal ids shown as names, and redundant explanations before delivery. Its scope is the delivered artifact; agent working methods and instruction maintenance belong to the skills that own those workflows.
 
 It covers three media, and each reference ends with a check to run before the work is shown:
 
