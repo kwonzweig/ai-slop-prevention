@@ -2,6 +2,14 @@
 
 Rules for anything a person operates or scans: a screen, a card, a caption, a list, a form, a prototype. Sources are given where a design system or usability study states the rule; the rest is the owner's standing decision for their products.
 
+## Start from the user's requirements
+
+- When the user asks for quality comparable to an example, treat its visual polish and usability as requirements.
+- Inspect the example's rendered screens and main user flows; find reusable implementation, styles, and design patterns, then reuse, improve, or adapt them to the requested use. When no example is supplied, inspect comparable real products.
+- Reading source code or borrowing isolated features does not establish that the result meets the example's standard.
+- Compare the rendered result and main task flows with the example, and fix gaps in polish or usability.
+- The user's requirements take precedence over this document's defaults from the first request; do not make the user repeat them.
+
 ## One field, one label, one line
 
 A record field is shown as a label followed by its value, on its own line or in its own cell. Fields of different kinds are never chained into one string with middle dots, pipes, slashes, or spaces.
@@ -44,8 +52,6 @@ No sentence in the interface tells the reader how the interface works. A button'
 
 Not: "Suggested prompts. Tap one to send it as a request, with what you have typed added to its fixed sentence." beside a chip. Instead: the chip, and an info icon whose tooltip holds that sentence.
 
-A brief that places a helper sentence "under the status" is asking for the information to be available there, and an info icon in that spot answers it. A one-line meta row asked for "like most tools do" is the habit asking for itself; deliver labeled rows, say in one line why, and switch only if the owner repeats the request.
-
 ## No permission theatre
 
 A value the person cannot change is shown as text. No lock glyph, no greyed-out control, no helper sentence or tooltip saying who may change it. A control that looks editable must be editable; plain text is what "obviously not editable" looks like.
@@ -76,9 +82,9 @@ A timestamp carries its field name (`Requested`, `Edited`, `Captured at`). A bar
 
 The looks that generated pages fall into when nothing was chosen: cream background with a serif display and terracotta accent; near-black with one acid accent; a purple-to-blue gradient hero; Inter or Space Grotesk as the safe face; emoji as section markers; numbered 01/02/03 markers on content that is not a sequence; a card with border, radius, and shadow around every block; everything centered. None of these is wrong when chosen for the subject. All of them are wrong as arrivals.
 
-## Color carries meaning, and real products set the bar
+## Color carries meaning
 
-A screen where every icon, status, and button is the same muted grey reads as unfinished and hides the one thing the person must find: which control does what. Confirm is green, destructive and cancel are red, the selected or primary thing is the accent, status words sit on a tinted pill. This is the convention of the products people already use (GitHub, Linear, Notion, Slack, Reddit, Stack Overflow), so before styling a card, a thread, a confirm row, or a list, open two or three products of the same type and match their legibility: where they put color, how large their type is, how they show author and time, how they separate replies. Borrow the conventions, not the brand. A grey check next to a grey cross in a delete confirmation is the failure case.
+A screen where every icon, status, and button is the same muted grey reads as unfinished and hides the one thing the person must find: which control does what. Confirm is green, destructive and cancel are red, the selected or primary thing is the accent, status words sit on a tinted pill. A grey check next to a grey cross in a delete confirmation is the failure case.
 
 ## Text does not float
 
@@ -97,6 +103,6 @@ Read it as a stranger who knows the domain but not this app.
 7. Every status value has its glyph and word.
 8. Each empty state is one factual sentence.
 9. No text appears twice on one card.
-10. Confirm, destructive, selected, and status each have their color, checked against a real product of the same type.
+10. Confirm, destructive, selected, and status each have their color, checked against the reference.
 11. No text or control group floats outside a visible container.
 12. Name the user task that each field, status, and download supports.
