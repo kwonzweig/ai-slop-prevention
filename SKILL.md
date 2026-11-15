@@ -1,12 +1,10 @@
 ---
 name: ai-slop-prevention
 license: MIT
-description: 'Use before showing any deliverable to a person or handing it to another agent, and when reviewing one: a UI screen, mockup, or prototype; a document, message, prompt, or spec; game content; a data model or code. Triggers include a card or caption that lists several fields on one line, a template or report format with no list of its fields and their types, an id shown as a label, an edit or delete rendered as text, a sentence in an interface that explains the interface, a lock or disabled control used to say "read only", a list, count, or detail copied from something that already has an owner, and a stack or library chosen because the project is small or agents know it best.'
+description: 'Use before showing any deliverable to a person or handing it to another agent, and when reviewing one: a UI screen, mockup, or prototype; a document, message, prompt, or spec; game content; a data model or code. Triggers include a card or caption that lists several fields on one line, a template or report format with no list of its fields and their types, an id shown as a label, an edit or delete rendered as text, a sentence in an interface that explains the interface, a builder''s test status or report in the deliverable, a lock or disabled control used to say "read only", a list, count, or detail copied from something that already has an owner, and a stack or library chosen because the project is small or agents know it best.'
 ---
 
 # AI slop prevention
-
-Generated work fails in the same few ways every time, whatever the medium. Each failure is the choice that fits the widest audience and the least context: tokens where a person needs labels, codes where they need names, explanation where they need form, and copies where they need a pointer. This skill names those habits so they can be caught before a person sees them.
 
 Read the reference for the medium you are producing. Each one ends with a check to run before the work is shown.
 
@@ -28,6 +26,7 @@ Read the reference for the medium you are producing. Each one ends with a check 
 | Permission theatre | A lock glyph or greyed control to say "you can't edit this" | Show the value as plain text. Nothing editable-looking that isn't. |
 | Coached empty states | "No requests yet. Write your first request below." | State the fact. The composer is already visible. |
 | Off-target entries | A result that answers a question carries things that do not meet it, often with a note that says so: a catalog snapshot listed as "no source list here" in a reply about where the sources are | The result holds every entry that meets the question, and only those. The rest of the investigation stays in the notes. See prose.md. |
+| Work notes in the deliverable | Builder test status, implementation narration, or a work report in the product | Keep work notes in the workspace. Show the data and actions the user needs for the task. See [ui.md](references/ui.md#work-notes-stay-in-the-workspace). |
 | Grey on grey | Every icon, status, and action in the same muted grey; a confirm row where check and cross look identical | Semantic color from products of the same type: positive green, destructive red, selected accent. See ui.md. |
 | Floating text | Captions, metadata, and button rows laid bare between other elements, so nobody can tell where one thing ends | Every text block and control group in its own card, panel, or boxed caption. |
 | Template chrome | Cream background with serif and terracotta, purple gradient hero, numbered 01/02/03 markers, emoji headings, cards on everything | Choose for the subject. Structure only where it carries information. |
@@ -43,7 +42,7 @@ First caught: a README naming six of a catalog's seven sources, 2026-11-10.
 
 ## What this skill owns, and what it points to
 
-This skill owns the first eight rows. No published skill checked on 2026-11-09 had rules for field mash, metadata nobody uses, text for standard actions, self-explaining interfaces, or permission theatre. For the rest it points to skills that already do the work, when they are installed:
+This skill owns Field mash through Work notes in the deliverable. No published skill checked on 2026-11-09 had rules for field mash, metadata nobody uses, text for standard actions, self-explaining interfaces, or permission theatre. For the rest it points to skills that already do the work, when they are installed:
 
 | Slice | Skill |
 | --- | --- |
