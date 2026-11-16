@@ -5,10 +5,16 @@ Rules for anything a person operates or scans: a screen, a card, a caption, a li
 ## Start from the user's requirements
 
 - When the user asks for quality comparable to an example, treat its visual polish and usability as requirements.
-- Inspect the example's rendered screens and main user flows; find reusable implementation, styles, and design patterns, then reuse, improve, or adapt them to the requested use. When no example is supplied, inspect comparable real products.
+- Inspect the example's rendered screens and main user flows; find reusable implementation, styles, and design patterns, then reuse, improve, or adapt them to the requested use.
 - Reading source code or borrowing isolated features does not establish that the result meets the example's standard.
 - Compare the rendered result and main task flows with the example, and fix gaps in polish or usability.
 - The user's requirements take precedence over this document's defaults from the first request; do not make the user repeat them.
+
+### Default web app references
+
+When no example is supplied, use the references below as the baseline for web apps; for other UI, inspect comparable real products.
+
+- [Paperclip](https://github.com/paperclipai/paperclip): the default reference for data-model organization, interface structure, and interaction flows. Reuse and adapt these to the app's purpose, and refine cosmetic choices with the user through iteration.
 
 ## One field, one label, one line
 
