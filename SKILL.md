@@ -1,7 +1,7 @@
 ---
 name: ai-slop-prevention
 license: MIT
-description: 'Use when building, modifying, or reviewing UI, including work based on supplied examples; when reviewing other deliverables; and before showing or handing off a document, message, prompt, spec, game content, data model, or code. Triggers include unlabeled fields, off-target content, redundant explanations, copied source lists, or stack choices based on familiarity.'
+description: 'Use when building, modifying, or reviewing UI, including work based on supplied examples; when reviewing other deliverables; and before showing or handing off a document, message, prompt, spec, game content, data model, or code. Triggers include unlabeled fields, off-target content, redundant explanations, or stack choices based on familiarity.'
 ---
 
 # AI slop prevention
@@ -22,14 +22,7 @@ When building, modifying, or reviewing UI, read and apply [references/ui.md](ref
 | Field mash | Fields of different kinds chained with dots, pipes, or spaces; a template or report format with no list of its fields | One field per labeled line or cell. A template or report format opens with its fields and their types. See [prose.md](references/prose.md). |
 | Off-target entries | A result that answers a question carries things that do not meet it, often with a note that says so: a catalog snapshot listed as "no source list here" in a reply about where the sources are | The result holds every entry that meets the question, and only those. The rest of the investigation stays in the notes. See prose.md. |
 | Staged prose | not X but Y, one-line closers, forced triads, dashes everywhere, bold labels, "I hope this helps" | Say the thing once, plainly. See prose.md. |
-| Hard-coded snapshot | What an owner holds, copied as it stood at one moment: a README naming six of a catalog's seven sources, "buy meat" passed on as three cuts, a second schema or term for a concept that has one | A pointer to the owner, plus only what the reader cannot get by following it. See below; for schemas, code.md. |
 | Legacy default | The option most common in training data (Express, Bootstrap) proposed as the simple choice, with "the project is small" or "agents know it best" as the reason; or the decision framed inside a layer that demand has left | Check first whether demand has moved to a component that removes the layer, and decide there. Then rank the candidates by the standard in `find-tools`. Project size is never the reason for an older one. See code.md. |
-
-## Hard-coded snapshot
-
-When the thing already has an owner the reader can reach (a file, a catalog, a table, a type, a skill, the words of whoever asked), point to it and add only what the reader cannot get by following the pointer. "Use X" stays "use X", in an instruction, README, skill, prompt, data record, or diagram alike. A copied detail is a second source: it goes stale when the owner changes, and the next reader takes it as complete. When the reader cannot reach the owner, copy, and name the owner and the date beside the copy.
-
-First caught: a README naming six of a catalog's seven sources, 2026-11-10.
 
 ## What this skill owns, and what it points to
 
@@ -42,6 +35,7 @@ The medium references own this skill's rules. For related work, use these skills
 | UX copy that restates the control or exposes internal codes | `impeccable` clarify reference (pbakaus/impeccable) |
 | Comment hygiene and over-engineering in code | `antislop-code` (miqdadbadjuber/anti-slop), `unslop-ai-code` (JCarterJohnson/vibecoded-design-tells) |
 | Stack and tool choice | `find-tools` (kwonzweig/there-is-a-tool-for-that) |
+| Copying what an owner holds instead of pointing to it: a README listing a catalog's sources, a description or count typed into a repo | `reality-sense` (kwonzweig/reality-sense), Single source of truth |
 
 ## Adding a habit
 
