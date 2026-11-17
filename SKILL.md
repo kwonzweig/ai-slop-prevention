@@ -27,7 +27,7 @@ When building, modifying, or reviewing UI, read and apply [references/ui.md](ref
 
 ## Hard-coded snapshot
 
-When the thing already has an owner the reader can reach (a file, a catalog, a table, a type, a skill, the words of whoever asked), point to it and add only what the reader cannot get by following the pointer. "Use X" stays "use X", in an instruction, README, skill, prompt, data record, or diagram alike. A copied detail is a second source: it goes stale when the owner changes, and the next reader takes it as complete. When the reader cannot reach the owner, copy, and name the owner and the date beside the copy.
+When the thing already has an owner the reader can reach (a file, a catalog, a table, a type, a skill, the words of whoever asked), point to it and add only what the reader cannot get by following the pointer. "Use X" stays "use X", in an instruction, README, skill, prompt, data record, or diagram alike. A copied detail is a second source: it goes stale when the owner changes, and the next reader takes it as complete. In code and data, pointing means reading the owner when the value is used, with a runtime cache at most; a script that writes the owner's values into repo files makes the same copy. A restriction an agent added, such as a test that forbids network access, does not make the owner unreachable; raise it with whoever owns the work. When the reader cannot reach the owner at the time of use, as with a printed handout or a kiosk with no internet, copy, and name the owner and the date beside the copy.
 
 First caught: a README naming six of a catalog's seven sources, 2026-11-10.
 
