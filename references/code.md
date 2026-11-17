@@ -1,6 +1,6 @@
 # Data models and code
 
-In code, the hard-coded snapshot multiplies parts: one concept gets a second schema, type, name, or endpoint, and the copies drift apart. The literature calls the data form **schema proliferation** (InfoQ, 2026) and **near-identical object types** (Palantir Ontology guidelines); the fix in both is one canonical representation per concept, with one distinguishing property for the variants.
+In code, a copied concept multiplies parts: one concept gets a second schema, type, name, or endpoint, and the copies drift apart. The literature calls the data form **schema proliferation** (InfoQ, 2026) and **near-identical object types** (Palantir Ontology guidelines); the fix in both is one canonical representation per concept, with one distinguishing property for the variants.
 
 ## One concept, one owner
 
